@@ -1,0 +1,15 @@
+{
+  "diff_cases": [
+    {"start": ["Oct", 21, 2026], "end": ["Feb", 11, 2027], "expected": "3 months 21 days"},
+    {"start": ["Jan", 1, 2024], "end": ["Dec", 31, 2024], "expected": "11 months 30 days"},
+    {"start": ["Jan", 1, 2025], "end": ["Jan", 1, 2025], "expected": "0 calendar day"},
+    {"start": ["Feb", 28, 2024], "end": ["Mar", 1, 2024], "expected": "2 calendar days"},
+    {"start": ["Dec", 31, 2023], "end": ["Jan", 1, 2024], "expected": "1 calendar day"}
+  ],
+  "add_cases": [
+    {"start": ["Oct", 21, 2026], "op": "+", "amounts": [0, 8, 1, 13], "expected": "Jul 11, 2027"},
+    {"start": ["Jan", 1, 2024], "op": "+", "amounts": [1, 0, 0, 0], "expected": "Jan 1, 2025"},
+    {"start": ["Mar", 1, 2024], "op": "-", "amounts": [0, 0, 0, 1], "expected": "Feb 29, 2024"},
+    {"start": ["Jan", 1, 2025], "op": "+", "amounts": [0, 0, 0, 0], "expected": "Jan 1, 2025"}
+  ]
+}
